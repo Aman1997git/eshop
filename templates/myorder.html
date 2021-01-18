@@ -29,7 +29,7 @@
   {% for products in myorder %}
     <tr>
       <th scope="row">{{forloop.counter}}</th>
-      <td><img width="30px" src="{{products.image.url}}"></td>
+      <td><img width="30px" height="35px" src="{{products.image.url}}"></td>
       <td>{{products.name}}</td>
       <td>{{products.quantity}}</td>
       <td>{{products.quantity|order_price_count:products.price|currency}}</td>
